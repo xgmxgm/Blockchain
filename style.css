@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: #101827;
+	color: white;
+	min-height: 100vh;
+}
+
+header {
+	background: #17243a;
+	padding: 30px;
+	text-align: center;
+	border-bottom: 1px solid #30415d;
+}
+
+header h1 {
+	color: #55aaff;
+	margin-bottom: 10px;
+}
+
+header p {
+	color: #aab8cc;
+}
+
+main {
+	max-width: 1200px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+section {
+	background: #17243a;
+	padding: 25px;
+	margin-bottom: 25px;
+	border-radius: 12px;
+	border: 1px solid #30415d;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #55aaff;
+}
+
+.stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+.stat-card {
+	background: #17243a;
+	padding: 25px;
+	border-radius: 12px;
+	text-align: center;
+	border: 1px solid #30415d;
+}
+
+.stat-card h3 {
+	color: #aab8cc;
+	margin-bottom: 15px;
+}
+
+.stat-card p {
+	font-size: 28px;
+	font-weight: bold;
+	color: #55aaff;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+input {
+	flex: 1;
+	min-width: 150px;
+	padding: 13px;
+	border-radius: 6px;
+	border: 1px solid #40516c;
+	background: #101827;
+	color: white;
+}
+
+button {
+	padding: 13px 20px;
+	background: #1685e8;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	background: #086bc0;
+}
+
+.table-wrapper {
+	overflow-x: auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 750px;
+}
+
+th,
+td {
+	padding: 14px;
+	border-bottom: 1px solid #30415d;
+	text-align: left;
+}
+
+th {
+	color: #55aaff;
+}
+
+td {
+	color: #d5dfed;
+}
+
+.status {
+	font-weight: bold;
+}
+
+.pending {
+	color: #ffc44d;
+}
+
+.confirmed {
+	color: #4bd68b;
+}
+
+.rejected {
+	color: #ff6565;
+}
+
+.security-section button {
+	margin: 5px;
+}
+
+.danger {
+	background: #c83b48;
+}
+
+.danger:hover {
+	background: #a52a36;
+}
+
+#verificationResult {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	padding: 25px;
+	color: #8293aa;
+}
+
+@media (max-width: 700px) {
+	.stats {
+		grid-template-columns: 1fr;
+	}
+
+	form {
+		flex-direction: column;
+	}
+
+	input {
+		width: 100%;
+	}
+}
